@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Révisions Bac Terminale</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1> Révisions Bac 2025</h1>
+    <p>Des fiches de qualité, gratuites, pour réussir tes examens !</p>
+    <button id="dark-toggle" class="dark-toggle">🌙 Mode sombre</button>
+  </header>
+  <main>
+    <section class="matieres">
+
+
+      <!--<a href="maths.html" class="card">Mathématiques</a>
+      <a href="physique.html" class="card">Physique-Chimie</a>
+      <a href="philosophie.html" class="card">Philosophie</a>
+      <a href="ses.html" class="card">SES</a>
+      <a href="si.html" class="card">Science de l'Ingénieur</a>
+      <a href="svt.html" class="card">SVT</a>
+      <a href="hlp.html" class="card">HLP</a>
+      <a href="hggsp.html" class="card">HGGSP</a>
+      <a href="nsi.html" class="card">NSI</a>
+      <div class="card coming">+ D'autres matières bientôt !</div>
+    -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Fiches créées par des élèves, pour des élèves.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isDark = localStorage.getItem("dark-mode") === "true";
+      if (isDark) {
+        document.body.classList.add("dark-mode");
+      }
+    
+      const toggleBtn = document.getElementById("dark-toggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+          localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+        });
+      }
+    });
+  </script>
+</body>
+</html>

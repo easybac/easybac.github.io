@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulateur de notes pour le Bac</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .simulateur {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .colonnes-notes {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .colonne {
+      width: 48%;
+    }
+
+    .colonne h3 {
+      text-align: center;
+      color: #34495e;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .champ-note {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .champ-note label {
+      flex: 1;
+    }
+
+    .champ-note input {
+      width: 60px;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .sliders {
+      margin-bottom: 30px;
+    }
+
+    .slider-group {
+      margin-bottom: 15px;
+    }
+
+    .slider-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .slider-group input[type=range] {
+      width: 100%;
+    }
+
+    .specialites {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .specialites select {
+      width: 48%;
+      padding: 6px;
+      border-radius: 6px;
+    }
+
+    .valider {
+      display: block;
+      width: 100%;
+      background-color: #27ae60;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .valider:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simulateur de Notes du Bac</h1>
+
+  <div class="simulateur">
+    <!-- Section Notes -->
+    <div class="colonnes-notes">
+      <div class="colonne">
+        <h3>Première</h3>
+        <div class="champ-note"><label>Français écrit</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>Français oral</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>Histoire</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>LVA</label><input type="number" min="0" max="20"></div>
+      </div>
+
+      <div class="colonne">
+        <h3>Terminale</h3>
+        <div class="champ-note"><label>Philosophie</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>LV B</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>EPS</label><input type="number" min="0" max="20"></div>
+        <div class="champ-note"><label>EMC</label><input type="number" min="0" max="20"></div>
+      </div>
+    </div>
+
+    <!-- Section Sliders -->
+    <div class="sliders">
+      <div class="slider-group">
+        <label for="sciences">Niveau en Sciences : <span id="valSci">10</span>/20</label>
+        <input type="range" id="sciences" min="0" max="20" value="10" oninput="valSci.innerText=this.value">
+      </div>
+
+      <div class="slider-group">
+        <label for="litterature">Niveau en Littérature : <span id="valLit">10</span>/20</label>
+        <input type="range" id="litterature" min="0" max="20" value="10" oninput="valLit.innerText=this.value">
+      </div>
+
+      <div class="slider-group">
+        <label for="oral">Aisance à l'oral : <span id="valOral">10</span>/20</label>
+        <input type="range" id="oral" min="0" max="20" value="10" oninput="valOral.innerText=this.value">
+      </div>
+    </div>
+
+    <!-- Section Spécialités -->
+    <div class="specialites">
+      <select>
+        <option>Spécialité 1</option>
+        <option>Maths</option>
+        <option>SES</option>
+        <option>HGGSP</option>
+        <option>NSI</option>
+      </select>
+
+      <select>
+        <option>Spécialité 2</option>
+        <option>SVT</option>
+        <option>SI</option>
+        <option>LLCER</option>
+        <option>HLP</option>
+      </select>
+    </div>
+
+    <!-- Bouton Valider -->
+    <button class="valider">Valider</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+  .form-container {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .dark-mode .form-container {
+    background-color: #1e1e1e;
+  }
+
+  .form-container * {
+    box-sizing: border-box;
+  }
+
+  input[type="number"],
+  select,
+  input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="range"] {
+    padding: 0;
+  }
+
+  button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #3730a3;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .form-container h3 {
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+  }
+
+  .slider-block {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slider-block p {
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .choix-spe {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+  }
+
+  .choix-spe p {
+      margin: 0px;
+      padding: 0px;
+  }

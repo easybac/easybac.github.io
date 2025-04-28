@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire en grille avancée</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: center;
+    }
+
+    input[type="number"],
+    select,
+    input[type="range"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="range"] {
+      padding: 0;
+    }
+
+    button {
+      grid-column: 1 / -1;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-container h3 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .slider-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider-block p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .choix-spe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+    }
+
+    .choix-spe p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h3>Première</h3><h3>Terminale</h3>
+    <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es1">
+    <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es2">
+    <input type="number" placeholder="Histoire-géographie" title="Histoire-géographie" id="hg1">
+    <input type="number" placeholder="Histoire-géographie" title="Histoire-géographie" id="hg2">
+    <input type="number" placeholder="Langue vivante A" title="Langue vivante A" id="lva1">
+    <input type="number" placeholder="Langue vivante A" title="Langue vivante A" id="lva2">
+    <input type="number" placeholder="Langue vivante B" title="Langue vivante B" id="lvb1">
+    <input type="number" placeholder="Langue vivante B" title="Langue vivante B" id="lvb2">
+    <input type="number" placeholder="EMC" title="EMC" id="emc1">
+    <input type="number" placeholder="EMC" title="EMC" id="emc2">
+    <input type="number" placeholder="EPS" title="EPS" style="grid-column: 2 / 3;" id="eps">
+    <input type="number" placeholder="Enseignement de spécialité 1" title="Enseignement de spécialité 1" id="spe1">
+    <input type="number" placeholder="Français - Écrit" title="Français - Écrit" style="grid-column: 1 / 2;" id="frecrit">
+    <input type="number" placeholder="Français - Oral" title="Français - Oral" style="grid-column: 1 / 2;" id="froral">
+
+    <div class="slider-block full-width">
+        <h4 class="full-width" style="text-align: center;">Indiquez votre niveau dans les matières scientifiques :</h4>
+        <p>Faible</p><p style="text-align: right;">Excellent</p>
+        <input type="range" id="sci" min="0" max="20" value="10" step="0.01" class="full-width">
+    </div>
+
+    <div class="slider-block full-width">
+      <h4 class="full-width" style="text-align: center;">Indiquez votre niveau dans les matières littéraires :</h4>
+      <p>Faible</p><p style="text-align: right;">Excellent</p>
+      <input type="range" id="litt" min="0" max="20" value="10" step="0.01" class="full-width">
+  </div>
+
+    <div class="slider-block full-width">
+        <h4 class="full-width" style="text-align: center;">Indiquez votre aisance à l'oral :</h4>
+        <p>Pas du tout à l'aise</p><p style="text-align: right;">Très à l'aise</p>
+        <input type="range" min="0" max="20" value="10" step="0.01" class="full-width" id="oral">
+    </div>
+  
+    <div class="choix-spe full-width">
+
+        <p>Spécialité 2 :</p><p>Spécialité 3 :</p>
+        <select id="spe2">
+            <option value="maths">Maths</option>
+            <option value="phch">Physique-Chimie</option>
+            <option value="nsi">NSI</option>
+            <option value="ses">SES</option>
+            <option value="hlp">HLP</option>
+            <option value="hggsp">HGGSP</option>
+            <option value="art">Art</option>
+            <option value="llcer">LLCER</option>
+            <option value="llca">LLCA</option>
+            <option value="bioeco">Biologie-Écologie</option>
+            <option value="svt">SVT</option>
+            <option value="eps">Sport</option>
+            <option value="si">SI</option>
+        </select>
+        <select id="spe3">
+          <option value="maths">Maths</option>
+          <option value="phch">Physique-Chimie</option>
+          <option value="nsi">NSI</option>
+          <option value="ses">SES</option>
+          <option value="hlp">HLP</option>
+          <option value="hggsp">HGGSP</option>
+          <option value="art">Art</option>
+          <option value="llcer">LLCER</option>
+          <option value="llca">LLCA</option>
+          <option value="bioeco">Biologie-Écologie</option>
+          <option value="svt">SVT</option>
+          <option value="eps">Sport</option>
+          <option value="si">SI</option>
+        </select>
+    </div>
+
+    <h3>Note visée au BAC :</h3>
+    <input type="number" placeholder="Objectif" title="Note visée" id="obj">
+
+    <button id="calculer" onclick="calculer()">Valider</button>
+    <div id="resultat" class="full-width"></div>
+    
+
+
+  </div>
+</body>
+<script>
+  const matieresCC = ["es1","es2","hg1","hg2","lva1","lva2","lvb1","lvb2","spe1","eps","emc1","emc2","froral","frecrit"];
+const coeffsCC = {"es1":3,"es2":3,"hg1":3,"hg2":3,"lva1":3,"lva2":3,"lvb1":3,"lvb2":3,"spe1":8,"eps":6,"emc1":1,"emc2":1,"froral":5,"frecrit":5};
+const spes = {"hggsp":9,"hlp":0,"ses":12,"maths":20,"llcer":5,"nsi":16,"phch":20,"svt":18,"si":19,"art":5,"eps":10,"llca":2,"bioeco":16};
+const mentNote = {"A":10,"B":12,"AB":14,"TB":16,"TBF":18};
+const corresp = {"hggsp":"HGGSP","hlp":"HLP","ses":"SES","maths":"Mathématiques","llcer":"LLCER","nsi":"NSI","phch":"Physique-Chimie","svt":"SVT","si":"SI","art":"Art","eps":"Sport","llca":"LLCA","bioeco":"Biologie-Écologie","philo":"Philosophie","oral":"Grand Oral"}
+
+function arrondir0_5(nombre) {
+    return Math.round(nombre * 2) / 2;
+}
+
+function calculer() {
+  const sci = parseFloat(document.getElementById("sci").value);
+  const oral = parseFloat(document.getElementById("oral").value);
+
+  var spe1Elmt = document.getElementById("spe2");
+  const spe1 = spe1Elmt.options[spe1Elmt.selectedIndex].value;
+  var spe2Elmt = document.getElementById("spe3");
+  const spe2 = spe2Elmt.options[spe2Elmt.selectedIndex].value;
+  const obj = parseFloat(document.getElementById("obj").value) * 100;
+  const litt = parseFloat(document.getElementById("litt").value);
+
+  // Notes contrôle continu
+  let notesCC = {};
+  let points = 0;
+  for (let m of matieresCC) {
+    const val = document.getElementById(m).value.trim();
+    let note = parseFloat(val);
+    console.log(note)
+    if (isNaN(note)) note = 0;
+    notesCC[m] = note;
+    points += note * (coeffsCC[m] || 0);
+  }
+
+  const diff = obj - points;
+  console.log(diff,obj,points);
+  const resultatDiv = document.getElementById("resultat");
+
+  if (diff > 1000) {
+    resultatDiv.innerHTML = "<p>🎯 Objectif impossible à atteindre.</p>";
+    return;
+  }
+
+  const coeffsEpr = {"spe1":16,"spe2":16,"oral":10,"philo":8};
+
+  const poids = {
+    "spe1": ((20 - Math.abs(spes[spe1] - sci)) / 20) * 320,
+    "spe2": ((20 - Math.abs(spes[spe2] - sci)) / 20) * 320,
+    "oral": (oral / 20) * 200,
+    "philo": (litt / 20) * 160
+  };
+
+  const sommePoids = Object.values(poids).reduce((a, b) => a + b, 0);
+
+  let notesAAvoir = {};
+  for (let k in poids) {
+    const numerateur = (diff * (poids[k] / sommePoids)) * 20;
+    const denominateur = (coeffsEpr[k] * 1000) / 50;
+    notesAAvoir[k] = arrondir0_5(numerateur / denominateur).toFixed(1);
+  }
+  notesAAvoir[spe1]=notesAAvoir["spe1"];
+  notesAAvoir[spe2]=notesAAvoir["spe2"];
+  delete notesAAvoir["spe1"];
+  delete notesAAvoir["spe2"];
+
+
+  let html = `<p>📊 Répartition des points conseillée :</p><ul>`;
+  for (let [k, v] of Object.entries(notesAAvoir)) {
+    html += `<li>${corresp[k]} : <strong>${v}/20</strong></li>`;
+  }
+  html += `</ul>`;
+  resultatDiv.innerHTML = html;
+}
+</script>
+</html>

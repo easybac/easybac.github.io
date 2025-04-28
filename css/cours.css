@@ -1,0 +1,199 @@
+
+
+  
+
+  
+  .matieres {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  .cours {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  .dark-mode .accordion-header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #333;
+  }
+
+  .dark-mode .accordion-header:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #333;
+  }
+
+  .dark-mode .accordion-content {
+    border-color: #333;
+  }
+  
+  
+.indispo {
+  box-shadow: 0 2px 5px #ff4400;
+  color: #ff4400;
+}
+
+
+
+  .arrow {
+    transition: transform 0.3s ease; /* Animation de la rotation */
+}
+
+.rotate {
+    transform: rotate(180deg); /* Rotation de la flèche */
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 20px 0px;
+    display: flex; /* Utiliser flexbox pour aligner la flèche et le texte */
+    justify-content: space-between; /* Espacement entre le texte et la flèche */
+    align-items: center; /* Centrer verticalement */
+    transition: background-color 0.3s ease; /* Animation de changement de couleur */
+    border-radius: 8px 8px 0px 0px;
+}
+
+.accordion-header:hover {
+    background-color: #e1e1e1; /* Changement de couleur au survol */
+}
+
+.accordion-content {
+    height: 0; /* Masquer le contenu par défaut */
+    overflow: hidden; /* Masquer le débordement */
+    transition: height 0.3s ease; /* Animation de la hauteur */
+    padding: 0 15px; /* Espacement interne */
+    border: 0;
+    margin: 0px 20px 0px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.accordion-content p {
+    margin: 15px 0px; /* Espacement pour le texte */
+}
+
+.active {
+    height: auto; /* Hauteur automatique lorsque le contenu est visible */
+    padding: 15px; /* Espacement interne lorsque le contenu est visible */
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+#suggestions {
+  border: 1px solid #ccc;
+  max-width: 300px;
+  max-height: 400px;
+  position: absolute;
+  background: white;
+  z-index: 10;
+  overflow: hidden;
+  overflow-y: auto;
+  clip-path: inset(0 round 10px);
+  /*border-radius: 10px;*/
+}
+
+#suggestions:empty {
+  display: none;
+}
+
+#suggestions div {
+  padding: 8px;
+  color:black;
+  cursor: pointer;
+}
+#suggestions div:hover {
+  background-color: #f0f0f0;
+}

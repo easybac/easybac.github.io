@@ -18,7 +18,7 @@ body {
   }
 
   
-  .fiche {
+  .card {
     background-color: white;
     border: 1px solid #ddd;
     padding: 1rem 2rem;
@@ -30,7 +30,7 @@ body {
     transition: 0.3s;
   }
   
-  .fiche:hover {
+  .card:hover {
     background-color: #eef2ff;
     transform: translateY(-2px);
   }
@@ -95,7 +95,7 @@ body {
     color: #f0f0f0;
   }
   
-  .dark-mode .fiche {
+  .dark-mode .card {
     background-color: #1e1e1e;
     color: #ffffff;
     border-color: #333;

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulateur notes BAC</title>
+  <link rel="stylesheet" href="css/simu.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+</head>
+<body>
+  <header>
+    <h1> Simulateur Bac 2025</h1>
+    <p>Un simulateur qui te donne des objectifs de notes personnalisés, pour mieux t'aider à organiser tes révisions !</p>
+    <label class="switch dark-toggle">
+      <input id="dark-toggle-input" type="checkbox" checked="darkTheme" />
+      <div class="slider round">
+        <div class="sun-moon">
+          <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+    
+          <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+        </div>
+        <div class="stars">
+          <svg id="star-1" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-2" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-3" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-4" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </label>
+    <!--<button id="dark-toggle" class="dark-toggle">🌙 Mode sombre</button>-->
+  </header>
+  <main>
+
+    <div class="form-container">
+      <h3>Première</h3><h3>Terminale</h3>
+      <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es1">
+      <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es2">
+      <input type="number" placeholder="Histoire-géographie" title="Histoire-géographie" id="hg1">
+      <input type="number" placeholder="Histoire-géographie" title="Histoire-géographie" id="hg2">
+      <input type="number" placeholder="Langue vivante A" title="Langue vivante A" id="lva1">
+      <input type="number" placeholder="Langue vivante A" title="Langue vivante A" id="lva2">
+      <input type="number" placeholder="Langue vivante B" title="Langue vivante B" id="lvb1">
+      <input type="number" placeholder="Langue vivante B" title="Langue vivante B" id="lvb2">
+      <input type="number" placeholder="EMC" title="EMC" id="emc1">
+      <input type="number" placeholder="EMC" title="EMC" id="emc2">
+      <input type="number" placeholder="EPS" title="EPS" style="grid-column: 2 / 3;" id="eps">
+      <input type="number" placeholder="Enseignement de spécialité 1" title="Enseignement de spécialité 1" id="spe1">
+      <input type="number" placeholder="Français - Écrit" title="Français - Écrit" style="grid-column: 1 / 2;" id="frecrit">
+      <input type="number" placeholder="Français - Oral" title="Français - Oral" style="grid-column: 1 / 2;" id="froral">
+  
+      <div class="slider-block full-width">
+          <h4 class="full-width" style="text-align: center;">Indiquez votre niveau dans les matières scientifiques :</h4>
+          <p>Faible</p><p style="text-align: right;">Excellent</p>
+          <input type="range" id="sci" min="0" max="20" value="10" step="0.01" class="full-width">
+      </div>
+  
+      <div class="slider-block full-width">
+        <h4 class="full-width" style="text-align: center;">Indiquez votre niveau dans les matières littéraires :</h4>
+        <p>Faible</p><p style="text-align: right;">Excellent</p>
+        <input type="range" id="litt" min="0" max="20" value="10" step="0.01" class="full-width">
+    </div>
+  
+      <div class="slider-block full-width">
+          <h4 class="full-width" style="text-align: center;">Indiquez votre aisance à l'oral :</h4>
+          <p>Pas du tout à l'aise</p><p style="text-align: right;">Très à l'aise</p>
+          <input type="range" min="0" max="20" value="10" step="0.01" class="full-width" id="oral">
+      </div>
+    
+      <div class="choix-spe full-width">
+  
+          <p>Spécialité 2 :</p><p>Spécialité 3 :</p>
+          <select id="spe2">
+              <option value="maths">Maths</option>
+              <option value="phch">Physique-Chimie</option>
+              <option value="nsi">NSI</option>
+              <option value="ses">SES</option>
+              <option value="hlp">HLP</option>
+              <option value="hggsp">HGGSP</option>
+              <option value="art">Art</option>
+              <option value="llcer">LLCER</option>
+              <option value="llca">LLCA</option>
+              <option value="bioeco">Biologie-Écologie</option>
+              <option value="svt">SVT</option>
+              <option value="eps">Sport</option>
+              <option value="si">SI</option>
+          </select>
+          <select id="spe3">
+            <option value="maths">Maths</option>
+            <option value="phch">Physique-Chimie</option>
+            <option value="nsi">NSI</option>
+            <option value="ses">SES</option>
+            <option value="hlp">HLP</option>
+            <option value="hggsp">HGGSP</option>
+            <option value="art">Art</option>
+            <option value="llcer">LLCER</option>
+            <option value="llca">LLCA</option>
+            <option value="bioeco">Biologie-Écologie</option>
+            <option value="svt">SVT</option>
+            <option value="eps">Sport</option>
+            <option value="si">SI</option>
+          </select>
+      </div>
+  
+      <h3>Note visée au BAC :</h3>
+      <input type="number" placeholder="Objectif" title="Note visée" id="obj">
+  
+      <button id="calculer" onclick="calculer()">Calculer la répartition</button>
+      <div id="resultat" class="full-width"></div>
+      
+  
+  
+    </div>
+
+    <a href="index.html" class="retour-card">← Retour</a>
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Fiches créées par des élèves, pour des élèves.</p>
+  </footer>
+  <!--<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isDark = localStorage.getItem("dark-mode") === "true";
+      if (isDark) {
+        document.body.classList.add("dark-mode");
+      }
+    
+      const toggleBtn = document.getElementById("dark-toggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+          localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+        });
+      }
+    });
+  </script>-->
+  <script src="js/script.js"></script>
+  <script src="js/simu.js"></script>
+</body>
+</html>

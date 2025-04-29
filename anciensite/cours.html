@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Révisions Bac Terminale</title>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/cours.css"/>
+</head>
+<body>
+  <header>
+    <h1>Révisions Bac 2025</h1>
+    <p>Des fiches de qualité, gratuites, pour réussir tes examens !</p>
+    <label class="switch dark-toggle">
+      <input id="dark-toggle-input" type="checkbox" checked="darkTheme" />
+      <div class="slider round">
+        <div class="sun-moon">
+          <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+    
+          <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+          <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+          </svg>
+        </div>
+        <div class="stars">
+          <svg id="star-1" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-2" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-3" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+          <svg id="star-4" class="star" viewBox="0 0 20 20">
+            <path
+              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </label>
+    <!--<button id="dark-toggle" class="dark-toggle">🌙 Mode sombre</button>-->
+    <!-- From Uiverse.io by satyamchaudharydev --> 
+  <form class="form">
+    <button>
+        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </button>
+    <input class="input" placeholder="Rechercher" required="" type="text" id="search-input">
+    <button class="reset" type="reset">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+    </button>
+</form>
+<div id="suggestions"></div>
+  </header>
+
+  <nav class="matieres">
+    <a href="#maths" class="card">Mathématiques</a>
+    <a href="#physique" class="card">Physique-Chimie</a>
+    <a href="#philosophie" class="card">Philosophie</a>
+    <a href="#ses" class="card">SES</a>
+    <a href="#si" class="card">Sciences de l'Ingénieur</a>
+    <a href="#svt" class="card">SVT</a>
+    <a href="#hlp" class="card">HLP</a>
+    <a href="#hggsp" class="card">HGGSP</a>
+    <a href="#nsi" class="card">NSI</a>
+    <a href="#" class="card coming">+ D'autres matières bientôt !</a>
+  </nav>
+
+  <main>
+    <section class="accordion">
+
+    <section class="matiere" id="maths">
+      <h2 class="accordion-header">Mathématiques<span class="arrow">▼</span></h2>
+      <div class="cours accordion-content">
+      <a href="docs/maths/suites-recurrence.pdf" class="card" target="_blank">📄 Suites et Récurrence</a>
+      <a href="docs/maths/limites_de_suites.pdf" class="card" target="_blank">📄 Limites de Suites</a>
+      <a href="docs/maths/limites_de_fonctions.pdf" class="card" target="_blank">📄 Limites de Fonctions</a>
+      <a href="docs/maths/derivation_convexite.pdf" class="card" target="_blank">📄 Dérivation & Convexité</a>
+      <a href="docs/maths/continuite.pdf" class="card" target="_blank">📄 Continuité</a>
+      <a href="docs/maths/cos_sin.pdf" class="card" target="_blank">📄 Fonctions circulaires</a>
+      <a href="docs/maths/ln.pdf" class="card" target="_blank">📄 Fonctions logarithme népérien et exponentielle</a>
+      <a href="docs/maths/equadiff.pdf" class="card" target="_blank">📄 Primitives et équations différentielles</a>
+      <a href="docs/maths/integration.pdf" class="card" target="_blank">📄 Intégration</a>
+      <a href="docs/maths/geo_espace.pdf" class="card" target="_blank">📄 Géométrie dans l'espace</a>
+      <a href="docs/maths/produit_scalaire_espace.pdf" class="card" target="_blank">📄 Produit Scalaire de l'espace</a>
+      <a href="docs/maths/probas.pdf" class="card" target="_blank">📄 Probabilités Conditionnelles</a>
+      <a href="#maths" class="card coming" target="_blank">📄 Loi Binomiale</a>
+      <a href="docs/maths/loi_gds_nombres.pdf" class="card" target="_blank">📄 Variables Aléatoires et Lois des Grands Nombres</a>
+    </div>
+    </section>
+
+    <section class="matiere" id="physique">
+      <h2 class="accordion-header">Physique-Chimie<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="docs/physique-chimie/acide_base-2-3.pdf" class="card" target="_blank">📄 Les Transformations acide-base</a>
+        <a href="docs/physique-chimie/analyse_phch.pdf" class="card" target="_blank">📄 Analyser un système chimique par des méthodes physico-chimiques</a>
+        <a href="docs/physique-chimie/cinetique_chim.pdf" class="card" target="_blank">📄 Cinétique chimique</a>
+        <a href="docs/physique-chimie/nucleaire.pdf" class="card" target="_blank">📄 Nucléaire</a>
+        <a href="docs/physique-chimie/evo_spontanee.pdf" class="card" target="_blank">📄 Evolution spontanée d'un système chimique</a>
+        <a href="docs/physique-chimie/force_acide_base.pdf" class="card" target="_blank">📄 Force des acides et des bases</a>
+        <a href="docs/physique-chimie/transfo_forcée.pdf" class="card" target="_blank">📄 Forcer le sens d'évolution d'un système</a>
+        <a href="docs/physique-chimie/synthese.pdf" class="card" target="_blank">📄 Synthèse</a>
+        <a href="docs/physique-chimie/cinematique.pdf" class="card" target="_blank">📄 Cinématique</a>
+        <a href="docs/physique-chimie/nomenclature.pdf" class="card" target="_blank">📄 Nomenclature</a>
+        <a href="docs/physique-chimie/meca2.pdf" class="card" target="_blank">📄 Mécanique I</a>
+        <a href="docs/physique-chimie/meca3.pdf" class="card" target="_blank">📄 Mécanique II : mouvement des satellites</a>
+        <a href="docs/physique-chimie/meca_fluide.pdf" class="card" target="_blank">📄 Écoulement des fluides</a>
+        <a href="docs/physique-chimie/thermo.pdf" class="card" target="_blank">📄 Thermodynamique</a>
+        <a href="docs/physique-chimie/prop_onde.pdf" class="card" target="_blank">📄 Propriétés des ondes</a>
+        <a href="docs/physique-chimie/lunettte.pdf" class="card" target="_blank">📄 Optique : Lunette Astronomique</a>
+        <a href="docs/physique-chimie/condensateur.pdf" class="card" target="_blank">📄 Eléctricité : Condensateur</a>
+        <a href="docs/physique-chimie/photoelectrique.pdf" class="card" target="_blank">📄 Effet Photoélectrique</a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="philosophie">
+      <h2 class="accordion-header">Philosophie<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="#philosophie" class="card coming" target="_blank">📄 L'art</a>
+        <a href="docs/philosophie/bonheur.pdf" class="card" target="_blank">📄 Le bonheur</a>
+        <a href="docs/philosophie/conscience.pdf" class="card" target="_blank">📄 La conscience</a>
+        <a href="docs/philosophie/devoir.pdf" class="card" target="_blank">📄 Le devoir</a>
+        <a href="docs/philosophie/etat.pdf" class="card" target="_blank">📄 L'État</a>
+        <a href="docs/philosophie/inconscience.pdf" class="card" target="_blank">📄 L'inconscient</a>
+        <a href="docs/philosophie/justice.pdf" class="card" target="_blank">📄 La justice</a>
+        <a href="docs/philosophie/liberte.pdf" class="card" target="_blank">📄 La liberté</a>
+        <a href="docs/philosophie/langage.pdf" class="card" target="_blank">📄 Le langage</a>
+        <a href="docs/philosophie/nature.pdf" class="card" target="_blank">📄 La nature</a>
+        <a href="docs/philosophie/raison.pdf" class="card" target="_blank">📄 La raison</a>
+        <a href="docs/philosophie/science.pdf" class="card" target="_blank">📄 La science</a>
+        <a href="docs/philosophie/religion.pdf" class="card" target="_blank">📄 La religion</a>
+        <a href="docs/philosophie/temps.pdf" class="card" target="_blank">📄 Le temps</a>
+        <a href="docs/philosophie/travail_tech.pdf" class="card" target="_blank">📄 Le travail et la technique</a>
+        <a href="docs/philosophie/verite.pdf" class="card" target="_blank">📄 La vérité</a>
+        
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="ses">
+      <h2 class="accordion-header">SES<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="#ses" class="card coming" target="_blank">📄 Quels sont les sources et les défis de la croissance économique ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quels sont les fondements du commerce international et de l'internationalisation de la production ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Comment lutter contre le chômage ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quelles politiques économiques dans le cadre européen ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quelles mutations du travail et de l'emploi ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Comment expliquer les crises financières et réguler le système financier ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quelle est l'action de l'École sur les destins individuels et sur l'évolution de la société ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Comment expliquer l'engagement politique dans les sociétés démocratiques ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quels sont les caractéristiques contemporaines et les facteurs de la mobilité sociale ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Comment est structurée la société française actuelle ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quelles inégalités sont compatibles avec les différentes conceptions de la justice sociale ? </a>
+        <a href="#ses" class="card coming" target="_blank">📄 Quelle action publique pour l'environnement ? </a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="si">
+      <h2 class="accordion-header">Sciences de l'Ingénieur<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="docs/si/cinematique.pdf" class="card" target="_blank">📄 Cinématique</a>
+        <a href="#si" class="card coming" target="_blank">📄 Mécanique I</a>
+        <a href="#si" class="card coming" target="_blank">📄 Mécanique II : mouvement des satellites</a>
+        <a href="#si" class="card coming" target="_blank">📄 Thermodynamique</a>
+        <a href="#si" class="card coming" target="_blank">📄 Propriétés des ondes</a>
+        <a href="docs/si/photoelectrique.pdf" class="card" target="_blank">📄 Effet Photoélectrique</a>
+        <a href="docs/si/condensateur.pdf" class="card" target="_blank">📄 Dipôle RC : Condensateur</a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="svt">
+      <h2 class="accordion-header">SVT<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="#svt" class="card coming" target="_blank">📄 Origine du génotype des individus</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Diversification du vivant sans reproduction sexuée</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Evolution des génomes au sein des populations</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Le temps et les roches</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Les traces du passé mouvementé de la Terre</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Les variations climatiques passées</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Les conséquences du réchauffement climatiques : réagir </a>
+        <a href="#svt" class="card coming" target="_blank">📄 Organisation fonctionnelle et production de matière organique</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Reproduction des plantes</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Domestication des plantes</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Comportements, mouvement et système nerveux</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Produire le mouvement : contraction musculaire et apport d'énergie</a>
+        <a href="#svt" class="card coming" target="_blank">📄 Réponses de l'organisme face au stress</a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="hlp">
+      <h2 class="accordion-header">HLP<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="#hlp" class="card coming" target="_blank">📄 Éducation, Transmission, Émancipation</a>
+        <a href="docs/hlp/expressions_sensi.pdf" class="card" target="_blank">📄 Les Expressions de la Sensibilité</a>
+        <a href="docs/hlp/meta_moi.pdf" class="card" target="_blank">📄 Les Métamorphoses du moi</a>
+        <a href="#hlp" class="card coming" target="_blank">📄 Création, Continuités et Ruptures</a>
+        <a href="#hlp" class="card coming" target="_blank">📄 Histoire et Violence</a>
+        <a href="#hlp" class="card coming" target="_blank">📄 L'humain et ses limites </a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    <section class="matiere" id="hggsp">
+      <h2 class="accordion-header">HGGSP<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <a href="#hggsp" class="card coming" target="_blank">📄 Thème 1 : De nouveaux espaces de conquête</a>
+      <a href="#hggsp" class="card coming" target="_blank">📄 Thème 2 : Faire la guerre, faire la paix : formes de conflits et modes de résolution </a>
+      <a href="#hggsp" class="card coming" target="_blank">📄 Thème 3 : Histoire et mémoires</a>
+      <a href="#hggsp" class="card coming" target="_blank">📄 Thème 4 : Identifier, protéger et valoriser le patrimoine : enjeux géopolitiques</a>
+      <a href="#hggsp" class="card coming" target="_blank">📄 Thème 5 : L'environnement, entre exploitation et protection : un enjeu planétaire</a>
+      <a href="#hggsp" class="card coming" target="_blank">📄 Thème 6 : L'enjeu de la connaissance </a>
+      </section>
+    </section>
+
+    <section class="matiere" id="nsi">
+      <h2 class="accordion-header">NSI<span class="arrow">▼</span></h2>
+      <section class="cours accordion-content">
+        <!-- remonter d'un niveau, puis accéder au dossier docs/maths -->
+        <a href="#nsi" class="card coming" target="_blank">📄 Structurer les données</a>
+        <a href="docs/nsi/secu_coms.pdf" class="card" target="_blank">📄 Sécurisation des communications</a>
+        <a href="docs/nsi/archi_sys.pdf" class="card" target="_blank">📄 Architecture matérielle / Système d'exploitation</a>
+        <a href="docs/nsi/sgbd_sql.pdf" class="card" target="_blank">📄 SGBD et SQL</a>
+        <a href="docs/nsi/recursivite.pdf" class="card" target="_blank">📄 Récursivité</a>
+        <a href="docs/nsi/arbres.pdf" class="card" target="_blank">📄 Arbres</a>
+        <a href="docs/nsi/poo.pdf" class="card" target="_blank">📄 Programmation orientée objet</a>
+        <a href="docs/nsi/boyermoore.pdf" class="card" target="_blank">📄 Algorithme de Boyer-Moore</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Graphes</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Routage</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Cryptographie</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Gestion des processus et ressources</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 System on Chip</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Programmer en grand</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Programmation dynamique</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Calculabilité</a>
+        <a href="#nsi" class="card coming" target="_blank">📄 Paradigmes de programmation</a>
+        <!-- Ajoute d'autres liens vers des fiches ici -->
+      </section>
+    </section>
+
+    </section>
+    <a href="index.html" class="retour-card">← Retour</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Fiches créées par des élèves, pour des élèves.</p>
+  </footer>
+
+  <!--<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isDark = localStorage.getItem("dark-mode") === "true";
+      if (isDark) {
+        document.body.classList.add("dark-mode");
+      }
+    
+      const toggleBtn = document.getElementById("dark-toggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+          localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+        });
+      }
+    });
+  </script>-->
+  <script src="js/script.js"></script>
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const arrow = this.querySelector('.arrow');
+
+            // Fermer tous les autres contenus
+            document.querySelectorAll('.accordion-content').forEach(otherContent => {
+                if (otherContent !== content) {
+                    otherContent.classList.remove('active');
+                    otherContent.style.height = '0'; // Réinitialiser la hauteur
+                    otherContent.previousElementSibling.querySelector('.arrow').classList.remove('rotate'); // Réinitialiser la flèche
+                }
+            });
+
+            // Afficher ou masquer le contenu de l'élément cliqué
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                content.style.height = '0'; // Réinitialiser la hauteur
+                arrow.classList.remove('rotate'); // Réinitialiser la flèche
+            } else {
+                content.classList.add('active');
+                content.style.height = content.scrollHeight + 'px'; // Définir la hauteur à la hauteur du contenu
+                arrow.classList.add('rotate'); // Faire tourner la flèche
+            }
+        });
+    });
+</script>
+<script src="js/recherche.js"></script>
+</body>
+</html>

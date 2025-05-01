@@ -36,6 +36,7 @@ const locFichiers = {
     "Philosophie - La religion":"philosophie/religion.pdf",
     "Philosophie - La vérité":"philosophie/verite.pdf",
     "Philosophie - La science":"philosophie/science.pdf",
+    "Philosophie - L'art'":"philosophie/art.pdf",
     "Physique-Chimie - La cinématique":"physique-chimie/cinematique.pdf",
     "Physique-Chimie - Le condensateur":"physique-chimie/condensateur.pdf",
     "Physique-Chimie - La Photoélectrique":"physique-chimie/photoelectrique.pdf",
@@ -56,7 +57,14 @@ const locFichiers = {
     "Physique-Chimie - La lunette astronomique":"physique-chimie/lunettte.pdf",
     "SI - La cinématique":"si/cinematique.pdf",
     "SI - Le condensateur":"si/condensateur.pdf",
-    "SI - La Photoélectrique":"si/photoelectrique.pdf"
+    "SI - La Photoélectrique":"si/photoelectrique.pdf",
+    "HGGSP - Thème 1 : De nouveaux espaces de conquête":"hggsp/theme_1",
+    "HGGSP - Thème 2 : Faire la guerre, faire la paix : formes de conflits et modes de résolution":"hggsp/theme_2",
+    "HGGSP - Thème 3 : Histoire et mémoires":"hggsp/theme_3",
+    "HGGSP - Thème 4 : Identifier, protéger et valoriser le patrimoine; enjeux géopolitiques":"hggsp/theme_4",
+    "HGGSP - Thème 5 : L'environnement, entre exploitation et protection : un enjeu planétaire":"hggsp/theme_5",
+    "HGGSP - Thème 6 : L'enjeu de la connaissance":"hggsp/theme_6",
+    "SES - Quels sont les sources et les défis de la croissance économique ?":"ses/defis_croiss_eco.pdf"
 };
 
 const fichiers = Object.keys(locFichiers);

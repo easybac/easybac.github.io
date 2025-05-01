@@ -27,8 +27,10 @@
   
   
   
+  
 </head>
 <body>
+
   
   <section data-bs-version="5.1" class="menu menu1 cid-uJKpzx9V1l" once="menu" id="menu1-h">
     
@@ -72,6 +74,27 @@
                     <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong>Toutes nos fiches gratuites</strong></h3>
                     
                 </div>
+
+                <form class="form">
+                    <button>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input" placeholder="Rechercher" required="" type="text" id="search-input">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+                <div id="suggestions"></div>
+
+
+
+
+
+
                 <div id="bootstrap-accordion_12" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
@@ -370,7 +393,7 @@
     </div>
 </section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
+<script src="js/recherche.js"></script>
   
 </body>
 </html>

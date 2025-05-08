@@ -1,0 +1,21 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Remove 'index.html' from URLs by redirecting to folder URL
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Remove .html extension from URLs (internally rewrite extensionless URLs to .html files)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+# Custom 404 error page
+ErrorDocument 404 /404.html
+
+# Optional: Prevent direct access to .htaccess file
+<Files .htaccess>
+    Require all denied
+</Files>
+</content>
+</create_file>

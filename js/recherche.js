@@ -64,7 +64,16 @@ const locFichiers = {
     "HGGSP - Thème 4 : Identifier, protéger et valoriser le patrimoine; enjeux géopolitiques":"hggsp/theme_4",
     "HGGSP - Thème 5 : L'environnement, entre exploitation et protection : un enjeu planétaire":"hggsp/theme_5",
     "HGGSP - Thème 6 : L'enjeu de la connaissance":"hggsp/theme_6",
-    "SES - Quels sont les sources et les défis de la croissance économique ?":"ses/defis_croiss_eco.pdf"
+    "SES - Quels sont les sources et les défis de la croissance économique ?":"ses/defis_croissance_eco.pdf",
+    "SES - Quels sont les fondements du commerce international et de l'internationalisation de la production ?":"ses/fondements_commerce.pdf",
+    "SES - Comment lutter contre le chômage ?":"ses/chomage.pdf",
+    "SES - Quelles politiques économiques dans le cadre européen ?":"ses/politiques_eco.pdf",
+    "SES - Quelles mutations du travail et de l'emploi ?":"ses/mutations_travail.pdf",
+    "SES - Comment expliquer les crises financières et réguler le système financier ?":"ses/crises_financieres.pdf",
+    "SES - Quelle est l'action de l'École sur les destins individuels et sur l'évolution de la société ?":"ses/action_ecole.pdf",
+    "SES - Comment expliquer l'engagement politique dans les sociétés démocratiques ?":"ses/egagm_politiques.pdf",
+    "SES - Quels sont les caractéristiques contemporaines et les facteurs de la mobilité sociale ?":"ses/carct_mobilites.pdf",
+    "SES - Comment est structurée la société française actuelle ?":"ses/structure_soc.pdf",
 };
 
 const fichiers = Object.keys(locFichiers);

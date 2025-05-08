@@ -2642,7 +2642,8 @@ a {
 .cid-uJKAmY9ikI .mbr-iconfont {
   font-size: 1.4rem !important;
   font-family: 'Moririse2' !important;
-  color: #9fe870;
+  /*color: #9fe870;*/
+  color:black;
   margin-left: 1rem;
 }
 .cid-uJKAmY9ikI .panel-group {

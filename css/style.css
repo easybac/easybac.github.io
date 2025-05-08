@@ -17,7 +17,7 @@ body {
     padding: 2rem 1rem;
   }
 
-  
+  /*
   .fiche {
     background-color: white;
     border: 1px solid #ddd;
@@ -33,8 +33,43 @@ body {
   .fiche:hover {
     background-color: #eef2ff;
     transform: translateY(-2px);
-  }
+  }*/
+
+
+  /* From Uiverse.io by SteveBloX */ 
+.fiche {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  /*backdrop-filter: blur(6px);*/
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.fiche:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+  color:black;
+}
+
+.fich:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
   
+
+
 
   .coming {
     background-color: #f0f0f0;
@@ -94,12 +129,12 @@ body {
     background-color: #121212;
     color: #f0f0f0;
   }
-  
+  /*
   .dark-mode .fiche {
     background-color: #1e1e1e;
     color: #ffffff;
     border-color: #333;
-  }
+  }*/
   
   
   footer {

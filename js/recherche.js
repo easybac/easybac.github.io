@@ -25,6 +25,7 @@ const locFichiers = {
     "HLP - Création, Continuités et Ruptures":"hlp/creation.pdf",
     "HLP - Histoire et Violence":"hlp/hist_violences.pdf",
     "HLP - L'humain et ses limites":"hlp/humains_limites.pdf",
+    "HLP - Méthode de l'écrit":"hlp/methode.pdf",
     "Philosophie - Le bonheur":"philosophie/bonheur.pdf",
     "Philosophie - L'inconscient":"philosophie/inconscience.pdf",
     "Philosophie - Le temps":"philosophie/temps.pdf",

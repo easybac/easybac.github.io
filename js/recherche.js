@@ -19,6 +19,7 @@ const locFichiers = {
     "NSI - Récursivité":"nsi/recursivite.pdf",
     "NSI - Sécurisation des communications":"nsi/secu_coms.pdf",
     "NSI - SGBD et SQL":"nsi/sgbd_sql.pdf",
+    "NSI - La programmation dynamique":"nsi/prog_dynamique.pdf",
     "HLP - Les expressions de la sensibilité":"hlp/expressions_sensi.pdf",
     "HLP - Les métamorphoses du moi":"hlp/meta_moi.pdf",
     "HLP - Éducation, Transmission, Émancipation":"hlp/education.pdf",
@@ -79,6 +80,8 @@ const locFichiers = {
     "SES - Comment expliquer l'engagement politique dans les sociétés démocratiques ?":"ses/egagm_politiques.pdf",
     "SES - Quels sont les caractéristiques contemporaines et les facteurs de la mobilité sociale ?":"ses/carct_mobilites.pdf",
     "SES - Comment est structurée la société française actuelle ?":"ses/structure_soc.pdf",
+    "SVT - L'origine du génotype des individus":"svt/genotypes_indivs.pdf",
+    "SVT - L'évolution des génomes au sein des populations":"svt/evo_genome.pdf"
 };
 
 const fichiers = Object.keys(locFichiers);

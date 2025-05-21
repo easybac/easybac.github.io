@@ -61,6 +61,15 @@
 <main>
 
     <div class="form-container">
+
+        <div class="tooltip-container">
+        <button aria-describedby="help-tooltip" class="help-button">?</button>
+        <div role="tooltip" id="help-tooltip" class="tooltip">
+            <i>💡</i>Remplissez les champs de saisie avec vos <strong>notes de contrôle continu</strong>, consultables sur pronote. Indiquez ensuite votre <strong>niveau dans les différents domaines</strong> afin de répartir les points manquants en fonction de votre aisance dans les différentes matières. Enfin, sélectionnez les 2 <strong>spécialités conservées en terminale</strong>, indiquez l'<strong>objectif</strong> que vous vous fixez et le tour et joué ! Les résultats tiennent compte des différents coefficients des épreuves et son purement indicatifs.
+        <br><br><strong>Barême des mentions</strong> :<br>- Admis : de 10 à 12 exclu<br>- Assez bien : de 12 à 14 exclu<br>- Bien : de 14 à 16 exclu<br>- Très bien : de 16 à 18 exclu<br>- Félicitations du jury : de 18 à 20<br>
+        </div>
+        </div>
+
       <h3>Première</h3><h3>Terminale</h3>
       <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es1" min="0" max="20" step="0.1">
       <input type="number" placeholder="Enseignement scientifique" title="Enseignement scientifique" id="es2" min="0" max="20" step="0.1">
@@ -115,7 +124,7 @@
           </select>
           <select id="spe3">
             <option value="maths">Maths</option>
-            <option value="phch">Physique-Chimie</option>
+            <option value="phch" selected>Physique-Chimie</option>
             <option value="nsi">NSI</option>
             <option value="ses">SES</option>
             <option value="hlp">HLP</option>

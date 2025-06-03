@@ -54,7 +54,7 @@ function start_counter(dico) {
                     var a = dico[b.id];
                     //b.innerText.trim();
                     a = Math.floor(a);//a = 2 < a.length - (a.indexOf(".") + 1) ? a.replace(/\./ig, "") : Math.floor(a);
-                    f(b, 0, a, 3E3)
+                    f(b, 0, a, 1000)
                 })
             })
         }, {

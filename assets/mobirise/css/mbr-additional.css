@@ -146,7 +146,7 @@ body {
   border-radius: 4px;
 }
 .bg-primary {
-  background-color: #9fe870 !important;
+  background-color: #ef613b !important;
 }
 .bg-success {
   background-color: #3a341c !important;
@@ -172,8 +172,8 @@ body {
 .btn-primary.focus,
 .btn-primary.active {
   color: inherit;
-  background-color: #bcef9c !important;
-  border-color: #bcef9c !important;
+  background-color: #b74627 !important;
+  border-color: #983b21 !important;
   box-shadow: none;
 }
 .btn-primary.disabled,

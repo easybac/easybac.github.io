@@ -45,7 +45,7 @@
     grid-column: 1 / -1;
     padding: 12px;
     font-size: 16px;
-    background-color: #4f46e5;
+    background-color: #ef613b;
     color: white;
     border: none;
     border-radius: 4px;
@@ -54,7 +54,7 @@
   }
 
   button:hover {
-    background-color: #3730a3;
+    background-color: #c55131;
   }
 
   .full-width {
@@ -96,7 +96,7 @@
 }
 
 .help-button {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background-color: #ef613b;
   color: white;
   border: none;
   width: 1.7em;
